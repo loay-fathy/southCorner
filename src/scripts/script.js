@@ -8,3 +8,18 @@ $(".parent").hover(function(){
   $(".parent").mouseleave(function(){
     $(".bg-animate").css("margin-left", "0%");
     })
+
+
+
+$(".white-box").hide();
+$(".nav-layer").hide();
+
+$(".exit").click(function(){
+  $(".white-box").hide();
+  $(".nav-layer").hide();
+})
+
+$(".links-btn").click(function(){
+  $(".white-box").show();
+  $(".nav-layer").show();
+})

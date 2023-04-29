@@ -29,21 +29,23 @@
 
 .nav-links li a
 {
+    text-decoration: none;
     color: #000;
 }
 
-svg
-{asdadasda
+.links-btn
+{
     padding-left: 44.5%;
     cursor: pointer;
     margin: 0 10px 10px 10px;
     border-radius: 10px;
+    display: none;
 }
 
 .nav-layer
 {
     width: 100%;
-    height: 1520px;
+    height: 100%;
     background-color: rgba(0, 0, 0, .6);
     z-index: 999999999999 !important;
     position: absolute;
@@ -51,19 +53,52 @@ svg
 
 .white-box
 {
-    width: 50%;
-    height: 500px;
+    width: 70%;
+    height: 60%;
     background: #FFF;
     border-radius: 15px;
     position: absolute;
-    top: 8%;
-    left: 25%;
+    top: 25%;
+    left: 16%;
+}
+
+.exit
+{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.white-box  ul li a
+{
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.white-box ul li
+{
+    text-align: center;
+    margin: 2px 25px 5px 0;
+    padding: 10px 0px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.exit:hover, .white-box ul li:hover
+{
+    background-color: rgba(0, 0, 0, .3);
 }
 
 svg:hover
 {
-    text-decoration: none;
+    background-color: rgba(0, 0, 0, .1);
 }
+
+
+
 
 .index-header
 {
@@ -71,6 +106,7 @@ svg:hover
     background-position: center;
     position: relative;
     height: 600px;
+    overflow: hidden;
 }
 
 .header-content
@@ -78,6 +114,7 @@ svg:hover
     position: absolute;
     top: 25%;
     left: 25%;
+    text-align: center;
 }
 
 .layer
@@ -132,13 +169,12 @@ svg:hover
 
 .intro
 {
-    margin: 150px 0 0 150px;
+    margin: 150px 0 150px 0;
 }
 
 .intro h1
 {
     margin-bottom: 25px;
-    width: 90%;
 }
 
 .intro p
@@ -178,8 +214,8 @@ svg:hover
 {
     height: 900px;
     background-image: url(../assets/1774823078.jpg);
-    background-repeat: space;
-    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    background-position: 50%;
     background-size: cover;
 }
 
@@ -218,8 +254,13 @@ svg:hover
 }
 
 
-
-
+.id-card
+{
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+}
 
 
 
@@ -534,4 +575,68 @@ body:nth-child(2)
     background: #dc3545;
     font-weight: 600;
     color: #fff;
+}
+
+
+@media only screen and (max-width: 535px) {
+
+    .nav-links
+    {
+        display: none;
+    }
+
+    .links-btn
+    {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 1084px) {
+    .header-content h1
+    {
+        font-size: 250%;
+    }
+}
+
+@media only screen and (max-width: 842px) {
+    .header-content h1
+    {
+        font-size: 200%;
+    }
+    .header-content p
+    {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 842px) {
+    .header-content h1
+    {
+        font-size: 170%;
+    }
+}
+
+@media only screen and (max-width: 842px) {
+    .header-content h1
+    {
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .brush
+    {
+        display: none !important;
+    }
+
+    .asd
+    {
+        width: 100% !important;
+    }
+
+    .intro h1
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 }
